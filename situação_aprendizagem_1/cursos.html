@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body style="background-color: aliceblue;">
+    <header style="text-align: center;">
+        <h1>Sobre você</h1>
+        <p>para Cadastra-se insira as seguintes informações</p>
+
+    </header>
+    <section>
+    <form action="cursos.html" method="post">
+            <p><label>email:</label>
+            <input type="email" nome="email" placeholder="Digite seu email" required>
+            </p>
+            <p><label>Senha:</label>
+            <input type="password" nome="senha" placeholder="digite sua senha" required maxlength="8">
+            </p>
+            <p><label>Telefone:</label>
+            <input type="text" nome="Telefone" placeholder="Digite seu Telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+            placeholder="(99) 99999-9999" required title="use o formato (99) 99999-9999">
+            </p>
+            <p><label>CEP:</label>
+            <input type="number" nome="CEP" placeholder="Digite o CEP da sua cidade" required>
+            </p>
+            <p><label>Sobre você:</label>
+            <textarea nome="bio" rows="10" cols="100"></textarea>
+            </p>
+            <p><label>Interesses:</label>
+            <input type="checkbox" nome="interreses" value="tecnologia">tecnologia
+            <input type="checkbox" nome="interreses" value="mecanica">mecanica
+            <input type="checkbox" nome="interreses" value="culinaria">culiaria
+            <input type="checkbox" nome="interreses" value="automação">automação
+            <p><label>Curso:</label>
+                <select name="Curso">
+                    <option value="">---</option>
+                    <option value="Técnico em Eletrotécnica">Técnico em Eletrotécnica</option>
+                    <option value="Técnico em Mecânica">Técnico em Mecânica</option>
+                    <option value="Eletricista Instalador Residencial">Eletricista Instalador Residencial</option>
+                    <option value="Técnico em Desenvolvimento de Sistemas">Técnico em Desenvolvimento de Sistemas</option>
+                    <option value="Soldador">Soldador</option>
+                    <option value="Torneiro Mecânico">Torneiro Mecânico</option>
+                    <option value="Técnico em Logística">Técnico em Logística</option>
+            </select>
+        </p>
+        <p><label>Genero:</label>
+            <input type="radio" nome="Genero" value="M">maculino
+            <input type="radio" nome="Genero" value="F">feminino
+            </p>
+        <p><label>Foto de perfil:</label>
+            <input type="file" nome="foto">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+ </body>
+ </html>
+ 
+ 
+ 
