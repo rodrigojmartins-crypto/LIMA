@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramação de Elementos</title>
+</head>
+<style>
+    .container {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        justify-content: left;
+        background-color: white;
+        border: 6px solid black;
+        box-shadow: 2px 4px black;
+        position: relative;
+
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+        position: fixed;
+        left: 50px;
+    }
+
+    span {
+        font-size: 20px;
+        vertical-align: bottom;
+    }
+
+    .item1 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        display: inline-block;
+        position: relative;
+        left: 150px;
+        z-index: 2;
+    }
+
+    .item2 {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facere iste repudiandae a ipsa
+            adipisci quo alias laborum temporibus id, reprehenderit animi! Dolor soluta eaque ipsam accusamus cum
+            voluptatem minima?</p>
+        <button>Loren</button>
+        <div>
+            <img>
+            <span>Exemplo vertical-align</span>
+        </div>
+        <div class="item1"> ITEM 1</div>
+        <div class="item2"> ITEM 2</div>
+    </div>
+</body>
+
+</html>
